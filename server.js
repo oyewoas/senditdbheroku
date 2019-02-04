@@ -8,14 +8,14 @@ import swaggerUi from 'swagger-ui-express';
 import YAML from 'yamljs';
 import path from 'path';
 import router from './app/routes';
-import createAllTables from './app/db/db';
+// import { createAllTables, dropAllTables } from './app/db/db';
 
 const port = process.env.PORT || 4000;
 
 const swaggerDocument = YAML.load(path.join(process.cwd(), './swagger/swagger.yaml'));
 
-createAllTables();
-dropAllTables(); 
+// createAllTables();
+// dropAllTables();
 dotenv.config();
 
 // create express app
