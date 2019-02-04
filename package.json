@@ -8,7 +8,7 @@
     "create-tables": "babel-node ./app/db/db createAllTables",
     "heroku-postbuild": "npm install --production",
     "build": "babel server.js --out-dir build",
-    "dev-start": "nodemon --watch . --exec babel-node -- server.js"
+    "start": "nodemon --watch . --exec babel-node -- server.js"
   },
   "repository": {
     "type": "git",
