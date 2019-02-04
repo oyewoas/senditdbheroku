@@ -1,0 +1,19 @@
+{
+    "name": "senditapidb",
+    "scripts": {
+      "postdeploy": "psql $DATABASE_URL -f ./app/db/db.js"
+    },
+    "env": {
+    },
+    "formation": {
+    },
+    "addons": [{
+       "plan": "heroku-postgresql:hobby-dev"
+    }],
+    "buildpacks": [
+      {
+        "url": "heroku/nodejs"
+      }
+    ]
+  }
+  
