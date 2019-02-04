@@ -14,7 +14,7 @@ export default function route(app) {
 
   app.put('/api/v1/user/profile', verifyAuth, updateUserProfile);
 
-  app.get('/api/v1/users', getAllUsers);
+  app.get('/api/v1/users', getAllUsers); 
 
 
   
